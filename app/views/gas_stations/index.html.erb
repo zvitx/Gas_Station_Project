@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Gas stations" %>
+
+<h1>Gas stations</h1>
+
+<div id="gas_stations">
+  <% @gas_stations.each do |gas_station| %>
+    <%= render gas_station %>
+    <p>
+      <%= link_to "Show this gas station", gas_station %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New gas station", new_gas_station_path %>

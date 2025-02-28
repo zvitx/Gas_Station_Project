@@ -1,0 +1,1 @@
+CRUD básico em Ruby on Rails que permita gerenciar postos de gasolina (GasStations) e suas bombas de combustível (Pumps), estabelecendo um relacionamento entre eles.
