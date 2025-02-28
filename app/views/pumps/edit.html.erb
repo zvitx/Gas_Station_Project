@@ -1,0 +1,12 @@
+<% content_for :title, "Editing pump" %>
+
+<h1>Editing pump</h1>
+
+<%= render "form", pump: @pump %>
+
+<br>
+
+<div>
+  <%= link_to "Show this pump", @pump %> |
+  <%= link_to "Back to pumps", pumps_path %>
+</div>

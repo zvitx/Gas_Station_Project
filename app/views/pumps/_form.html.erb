@@ -1,0 +1,32 @@
+<%= form_with(model: pump) do |form| %>
+  <% if pump.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pump.errors.count, "error") %> prohibited this pump from being saved:</h2>
+
+      <ul>
+        <% pump.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :fuel_type, style: "display: block" %>
+    <%= form.text_field :fuel_type %>
+  </div>
+
+  <div>
+    <%= form.label :capacity, style: "display: block" %>
+    <%= form.number_field :capacity %>
+  </div>
+
+  <div>
+    <%= form.label :gas_station_id, style: "display: block" %>
+    <%= form.text_field :gas_station_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
