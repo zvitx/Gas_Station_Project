@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Pumps" %>
+<% content_for :title, "Bombas" %>
 
 <h1>Pumps</h1>
 
@@ -8,9 +8,9 @@
   <% @pumps.each do |pump| %>
     <%= render pump %>
     <p>
-      <%= link_to "Show this pump", pump %>
+      <%= link_to "Exibir bomba", pump %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New pump", new_pump_path %>
+<%= link_to "Nova bomba", new_pump_path %>
