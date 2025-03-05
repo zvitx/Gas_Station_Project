@@ -25,7 +25,7 @@ class PumpsController < ApplicationController
 
     respond_to do |format|
       if @pump.save
-        format.html { redirect_to @pump, notice: "Pump was successfully created." }
+        format.html { redirect_to @pump, notice: "Bomba criada com sucesso." }
         format.json { render :show, status: :created, location: @pump }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PumpsController < ApplicationController
   def update
     respond_to do |format|
       if @pump.update(pump_params)
-        format.html { redirect_to @pump, notice: "Pump was successfully updated." }
+        format.html { redirect_to @pump, notice: "Bomba atualizada com sucesso." }
         format.json { render :show, status: :ok, location: @pump }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PumpsController < ApplicationController
     @pump.destroy!
 
     respond_to do |format|
-      format.html { redirect_to pumps_path, status: :see_other, notice: "Pump was successfully destroyed." }
+      format.html { redirect_to pumps_path, status: :see_other, notice: "Bomba excluída com sucesso." }
       format.json { head :no_content }
     end
   end

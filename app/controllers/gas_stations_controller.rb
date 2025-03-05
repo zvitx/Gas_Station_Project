@@ -3,7 +3,7 @@ class GasStationsController < ApplicationController
 
   # GET /gas_stations or /gas_stations.json
   def index
-    @gas_stations = GasStation.all
+    @gas_stations = GasStation.order :name
   end
 
   # GET /gas_stations/1 or /gas_stations/1.json
@@ -25,7 +25,7 @@ class GasStationsController < ApplicationController
 
     respond_to do |format|
       if @gas_station.save
-        format.html { redirect_to @gas_station, notice: "Gas station was successfully created." }
+        format.html { redirect_to @gas_station, notice: "Posto criado com sucesso." }
         format.json { render :show, status: :created, location: @gas_station }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GasStationsController < ApplicationController
   def update
     respond_to do |format|
       if @gas_station.update(gas_station_params)
-        format.html { redirect_to @gas_station, notice: "Gas station was successfully updated." }
+        format.html { redirect_to @gas_station, notice: "Posto atualizado com sucesso." }
         format.json { render :show, status: :ok, location: @gas_station }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GasStationsController < ApplicationController
     @gas_station.destroy!
 
     respond_to do |format|
-      format.html { redirect_to gas_stations_path, status: :see_other, notice: "Gas station was successfully destroyed." }
+      format.html { redirect_to gas_stations_path, status: :see_other, notice: "Posto excluído com sucesso" }
       format.json { head :no_content }
     end
   end

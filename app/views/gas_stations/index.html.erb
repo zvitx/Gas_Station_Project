@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Gas stations" %>
+<% content_for :title, "Postos" %>
 
 <h1>Gas stations</h1>
 
@@ -8,9 +8,9 @@
   <% @gas_stations.each do |gas_station| %>
     <%= render gas_station %>
     <p>
-      <%= link_to "Show this gas station", gas_station %>
+      <%= link_to "Exibir detalhes", gas_station %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New gas station", new_gas_station_path %>
+<%= link_to "Novo posto", new_gas_station_path %>
