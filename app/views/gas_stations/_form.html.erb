@@ -1,7 +1,7 @@
 <%= form_with(model: gas_station) do |form| %>
   <% if gas_station.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(gas_station.errors.count, "error") %> prohibited this gas_station from being saved:</h2>
+      <h2><%= pluralize(gas_station.errors.count, "erros") %> foram detectados:</h2>
 
       <ul>
         <% gas_station.errors.each do |error| %>
@@ -22,6 +22,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Criar posto" %>
   </div>
 <% end %>

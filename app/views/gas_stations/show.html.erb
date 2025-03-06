@@ -3,8 +3,8 @@
 <%= render @gas_station %>
 
 <div>
-  <%= link_to "Edit this gas station", edit_gas_station_path(@gas_station) %> |
-  <%= link_to "Back to gas stations", gas_stations_path %>
+  <%= link_to "Editar posto", edit_gas_station_path(@gas_station) %> |
+  <%= link_to "Voltar para postos", gas_stations_path %>
 
   <%= button_to "Excluir posto", @gas_station, method: :delete %>
 </div>

@@ -1,12 +1,12 @@
-<% content_for :title, "Editing gas station" %>
+<% content_for :title, "Edição de posto" %>
 
-<h1>Editing gas station</h1>
+<h1>Editando posto</h1>
 
 <%= render "form", gas_station: @gas_station %>
 
 <br>
 
 <div>
-  <%= link_to "Show this gas station", @gas_station %> |
-  <%= link_to "Back to gas stations", gas_stations_path %>
+  <%= link_to "Exibir detalhes do posto", @gas_station %> |
+  <%= link_to "Voltar para postos", gas_stations_path %>
 </div>
