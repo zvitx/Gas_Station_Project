@@ -1,7 +1,9 @@
 nav ul {
   list-style: none;
   display: flex;
-  gap: 50px;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
   padding: 0;
 }
 
@@ -13,4 +15,11 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  white-space: nowrap;
+}
+
+.search-form{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
