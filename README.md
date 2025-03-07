@@ -40,6 +40,6 @@ rails s
 5) Acesse a aplicação em seu navegador de preferência pelo *http://localhost:3000*
 
 ## Melhorias futuras
-- Importar e exportar dados de postos e bombas por meio de um .csv
+- Funcionalidade de importar e exportar dados de postos e bombas por meio de um .csv
 - Melhorias visuais para facilitar o uso e navegação pela aplicação
 - Fazer deploy e manutenção da aplicação
