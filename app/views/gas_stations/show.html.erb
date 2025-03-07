@@ -7,6 +7,7 @@
     <p><strong>Id Bomba:</strong> <%= pump.id%></p>
     <p><strong>Combustível:</strong> <%= pump.fuel_type %></p>
     <p><strong>Capacidade:</strong> <%= pump.capacity %></p>
+    <%= link_to "Editar bomba", edit_pump_path(pump.id) %>
   </div>
 <% end %>
 
