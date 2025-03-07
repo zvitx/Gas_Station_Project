@@ -8,6 +8,8 @@ class GasStationsController < ApplicationController
 
   # GET /gas_stations/1 or /gas_stations/1.json
   def show
+    @gas_station = GasStation.find(params[:id])
+    @pumps = @gas_station.pumps
   end
 
   # GET /gas_stations/new
