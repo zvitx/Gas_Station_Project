@@ -1,0 +1,10 @@
+<h1>Posto</h1>
+
+<div id="gas_stations">
+  <% @gas_stations.each do |gas_station| %>
+    <%= render gas_station %>
+    <p>
+      <%= link_to "Exibir detalhes", gas_station %>
+    </p>
+  <% end %>
+</div>

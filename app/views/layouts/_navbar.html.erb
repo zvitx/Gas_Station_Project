@@ -6,5 +6,9 @@
         <li><a href="<%=gas_stations_path%>">Lista de Postos</li>
         <li><a href="<%= pumps_path %>">Lista de Bombas</a></li>
 
+        <%= form_tag gas_stations_search_path, method: :get do %>
+        <%= text_field_tag :name, nil, placeholder: "Pesquisa por nome" %>
+        <%= submit_tag "Buscar" %>
+        <% end %>
     </ul>
 </nav>
