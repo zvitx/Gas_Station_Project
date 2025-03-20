@@ -1,0 +1,19 @@
+current directory: /home/vitora/Gas_Station_Project/vendor/bundle/ruby/3.4.0/gems/debug-1.10.0/ext/debug
+/home/vitora/.asdf/installs/ruby/3.4.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/vitora/Gas_Station_Project/vendor/bundle/ruby/3.4.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250320-86310-1fstti sitelibdir\=./.gem.20250320-86310-1fstti clean
+
+current directory: /home/vitora/Gas_Station_Project/vendor/bundle/ruby/3.4.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250320-86310-1fstti sitelibdir\=./.gem.20250320-86310-1fstti
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/vitora/Gas_Station_Project/vendor/bundle/ruby/3.4.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250320-86310-1fstti sitelibdir\=./.gem.20250320-86310-1fstti install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250320-86310-1fstti/debug
+
+current directory: /home/vitora/Gas_Station_Project/vendor/bundle/ruby/3.4.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250320-86310-1fstti sitelibdir\=./.gem.20250320-86310-1fstti clean
